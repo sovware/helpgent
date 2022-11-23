@@ -11,7 +11,7 @@
  * Plugin Name:       HelpGent
  * Plugin URI:        https://github.com/sovware/helpgent
  * Description:       A customer support app
- * Version:           0.1.1
+ * Version:           0.1.2
  * Requires at least: 5.2
  * Requires PHP:      7.2
  * Author:            wpWax

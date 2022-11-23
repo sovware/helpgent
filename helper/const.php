@@ -1,7 +1,7 @@
 <?php
 
 if ( ! defined( 'HELPGENT_VERSION' ) ) {
-    define( 'HELPGENT_VERSION', '0.1.1' );
+    define( 'HELPGENT_VERSION', '0.1.2' );
 }
 
 if ( ! defined( 'HELPGENT_PREFIX' ) ) {
