@@ -33,9 +33,6 @@ const General = (props) => {
         const name   = event.target.name;
         let value  = event.target.value;
         let max    = event.target?.max;
-        
-
-        
 
         if ( max ) {
             max = Number.parseInt(max);
