@@ -8415,7 +8415,7 @@ var EmailTemplate = function EmailTemplate(props) {
         className: "wpwax-vm-card-header",
         children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("h3", {
           className: "wpwax-vm-card-header__title",
-          children: "New Meaage"
+          children: "New Message"
         })
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
         className: "wpwax-vm-card-body",
@@ -8550,14 +8550,19 @@ var General = function General(props) {
     }));
   };
   var handleChange = function handleChange(event) {
-    var settingName = event.target.name;
-    var settingValue = event.target.value;
-    var max = event.target.max;
-    if (max && settingValue > max) {
-      return;
+    var _event$target;
+    var name = event.target.name;
+    var value = event.target.value;
+    var max = (_event$target = event.target) === null || _event$target === void 0 ? void 0 : _event$target.max;
+    if (max) {
+      max = Number.parseInt(max);
+      value = Number.parseInt(value ? value : 0);
+      if (value > max) {
+        return;
+      }
     }
     setContentState(_objectSpread(_objectSpread({}, contentState), {}, {
-      options: _objectSpread(_objectSpread({}, contentState.options), {}, _defineProperty({}, settingName, settingValue))
+      options: _objectSpread(_objectSpread({}, contentState.options), {}, _defineProperty({}, name, value))
     }));
   };
   var handleChangeSelectValue = function handleChangeSelectValue(selectEvent, e) {

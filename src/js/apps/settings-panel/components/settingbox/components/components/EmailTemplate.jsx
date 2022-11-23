@@ -297,7 +297,7 @@ const EmailTemplate = (props) => {
             </div>
             <div className='wpwax-vm-card'>
                 <div className='wpwax-vm-card-header'>
-                    <h3 className='wpwax-vm-card-header__title'>New Meaage</h3>
+                    <h3 className='wpwax-vm-card-header__title'>New Message</h3>
                 </div>
                 <div className='wpwax-vm-card-body'>
                     <div className='wpwax-vm-settings'>
